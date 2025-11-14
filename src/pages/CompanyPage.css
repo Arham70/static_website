@@ -1,0 +1,128 @@
+.company-page {
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.company-page-hero {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.company-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.company-page-title {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -2px;
+}
+
+.company-page-subtitle {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+.company-page-content {
+  padding: 6rem 2rem;
+  background: white;
+}
+
+.company-intro {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.company-intro-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #1a1a2e;
+}
+
+.company-intro-text {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.company-values {
+  padding: 6rem 2rem;
+  background: #f8f9fa;
+}
+
+.company-values-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #1a1a2e;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+}
+
+.value-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  border-color: #4a90e2;
+}
+
+.value-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.value-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+}
+
+.value-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .company-page-hero {
+    padding: 4rem 1.5rem;
+  }
+
+  .company-page-content {
+    padding: 4rem 1.5rem;
+  }
+
+  .company-values {
+    padding: 4rem 1.5rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+

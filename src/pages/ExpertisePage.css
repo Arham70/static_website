@@ -1,0 +1,101 @@
+.expertise-page {
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.expertise-page-hero {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.expertise-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.expertise-page-title {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -2px;
+}
+
+.expertise-page-subtitle {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+.expertise-page-content {
+  padding: 6rem 2rem;
+  background: #f8f9fa;
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+}
+
+.expertise-card {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.expertise-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  border-color: #4a90e2;
+}
+
+.expertise-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.expertise-card-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #1a1a2e;
+}
+
+.expertise-card-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  color: #4a90e2;
+}
+
+.expertise-card-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .expertise-page-hero {
+    padding: 4rem 1.5rem;
+  }
+
+  .expertise-page-content {
+    padding: 4rem 1.5rem;
+  }
+
+  .expertise-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .expertise-card {
+    padding: 2rem;
+  }
+}
+
+
